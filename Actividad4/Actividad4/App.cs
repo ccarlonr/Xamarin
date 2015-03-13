@@ -7,27 +7,21 @@ namespace Actividad4
 	{
 		public static Page GetMainPage ()
 		{	
-			//Se crea un objeto etiqueta
-			Label label = new Label();
-
-			//Se modifican sus propiedades
-			//Texto
-			label.Text = "Cámbiame";
-			//Color del texto
-			label.TextColor = Color.Blue;
-			//Alineación vertical (YAlign). Para la alineación horizontal, usar XAlign
-			label.YAlign = TextAlignment.Center;
-
-
-			//El mismo código usando inicializador de objetos
-			//Label label = new Label{ Text = "Cámbiame", TextColor =  Color.Blue, YAlign = TextAlignment.Center };
-
-			//Se crea una página y se le asigna como contenido la eqtiqueta que se creó
-			ContentPage contentPage = new ContentPage();
-			contentPage.Content = label;
-
-			return contentPage;
+			//Se crea un inicializador de objeto
+			return new ContentPage { 
+				Content = new Label {
+					//Se modifican sus propiedades
+					//Texto
+					Text = "Cámbiame",
+					//Alineación vertical (VerticalOptions). Para la alineación horizontal, usar HorizontalOptions
+					VerticalOptions = LayoutOptions.CenterAndExpand,
+					HorizontalOptions = LayoutOptions.StartAndExpand,
+					//Color de Fondo
+					BackgroundColor = Color.Black,
+					//Color de Texto
+					TextColor = Color.Blue
+				},
+			};
 		}
 	}
 }
-

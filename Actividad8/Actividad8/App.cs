@@ -7,7 +7,7 @@ namespace Actividad8
 	{
 		public static Page GetMainPage ()
 		{	
-			return new NavigationPage (new Login());
+			return new NavigationPage (new Contenido());
 		}
 	}
 }

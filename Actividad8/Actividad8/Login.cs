@@ -15,10 +15,11 @@ namespace Actividad8
 				TextColor = Color.White,
 				BackgroundColor = Color.FromHex ("77D065") 
 			};
-
+					
 			boton.Clicked += (sender, e) => {
 
 			};
+				
 
 			//Stacklayout permite apilar los controles verticalmente
 			StackLayout stackLayout = new StackLayout

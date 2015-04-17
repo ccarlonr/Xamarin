@@ -9,7 +9,7 @@ namespace Actividad8
 		{
 			Label texto = new Label {
 				Text = "Contenido",
-				TextColor = Color.Green
+				TextColor = Color.Purple
 			};
 
 			Button boton = new Button
